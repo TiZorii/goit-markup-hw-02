@@ -1,35 +1,45 @@
 /* Body */
 
+:root {
+    --white: #fff;
+    --slate: #434455;
+    --iris: #4D5AE5;
+    --cloud: #F4F4FD;
+    --navyblue: #2E2F42;
+    --ocean: #404BBF;
+}
+
 body {
     font-family: "Roboto", sans-serif;
+    color: var(--slate);
+    background-color: var(--white);
 }
 
 .list {
-    list-style-type: none
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
 }
 
 /* Header */
 header a.logo {
-    font-family: Raleway;
-    color: #4D5AE5;
+    font-family: "Raleway", sans-serif;
+    color: var(--iris);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 header .logo-part {
-    color: #2e2f42;
-}
-
-.navigator-list {
-    list-style-type: none;
+    color: var(--navyblue);
 }
 
 .navigator-list-item {
-    color: #2E2F42;
+    color: var(--navyblue);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -39,13 +49,16 @@ header .logo-part {
 
 .navigator-list-item:hover,
 .navigator-list-item:focus {
-    color: #404BBF;
+    color: var(--ocean);
     text-decoration: underline;
 }
 
-.contact-list-item {
-    color: #434455;
+.contact-list {
     font-style: normal;
+}
+
+.contact-list-item {
+    color: var(--slate);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -55,7 +68,7 @@ header .logo-part {
 
 .contact-list-item:hover,
 .contact-list-item:focus {
-    color: #404BBF;
+    color: var(--ocean);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -68,11 +81,11 @@ header .logo-part {
     width: 1440px;
     height: 600px;
     flex-shrink: 0;
-    background: #2E2F42;
+    background: var(--navyblue);
 }
 
 .hero-tittle {
-    color: #FFF;
+    color: var(--white);
     text-align: center;
     font-size: 56px;
     font-weight: 700;
@@ -81,74 +94,48 @@ header .logo-part {
 }
 
 .hero-button {
-    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    color: var(--white);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
-    display: inline-flex;
-    padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    background: #4D5AE5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: var(--iris);
 }
 
 .hero-button:hover,
 .hero-button:focus {
     cursor: pointer;
-    display: inline-flex;
-    padding: 16px 32px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    background: #404BBF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: var(--ocean);
 }
 
 /* section 2 */
 
-.goal-list {
-    list-style-type: none;
-    display: flex;
-    width: 264px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-}
 
-.goal-list h3 {
+.goal-tittle {
     width: 264px;
-    color: #2E2F42;
+    color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
 }
 
-.goal-list p {
+.goal-text {
     width: 264px;
-    color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
-.project h2 {
-    color: #2E2F42;
+.project-tittle {
+    color: var(--navyblue);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-}
-
-.project-item {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 /* section 3 */
@@ -156,42 +143,34 @@ header .logo-part {
     width: 1440px;
     height: 732px;
     flex-shrink: 0;
-    background: #F4F4FD;
+    background: var(--cloud);
 }
 
-.team h2 {
-    color: #2E2F42;
+.team-tittle {
+    color: var(--navyblue);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
 
-.team-list li {
+.team-list-item {
     list-style-type: none;
-    display: inline-flex;
-    padding-bottom: 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    border-radius: 0px 0px 4px 4px;
-    background: #FFF;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    background: var(--white);
+
 }
 
-.team-list-item h3 {
-    color: #2E2F42;
+.team-list-tittle {
+    color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.11;
     letter-spacing: 0.4px;
 }
 
-.team-list-item p {
-    color: #434455;
+.team-list-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -199,16 +178,16 @@ header .logo-part {
 
 /* Footer */
 
-footer {
-    background-color: #2E2F42;
+.bottom {
+    background-color: var(--navyblue);
     width: 1440px;
     height: 312px;
     flex-shrink: 0;
 }
 
-footer .logo {
-    font-family: Raleway;
-    color: #4D5AE5;
+.bottom-logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--iris);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -217,8 +196,8 @@ footer .logo {
     text-decoration: none;
 }
 
-footer .logo-part {
-    color: #F4F4FD;
+.bottom-logo-part {
+    color: var(--cloud);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
@@ -227,71 +206,47 @@ footer .logo-part {
     text-transform: uppercase;
 }
 
-footer p {
-    color: #F4F4FD;
+.bottom-text {
+    color: var(--cloud);
     width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
-/* portfolio */
+/* Portfolio */
 
-.button-list {
-    list-style-type: none;
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 24px;
+.btn {
+    font-family: "Roboto", sans-serif;
+    color: var(--iris);
+    background: var(--cloud);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
 }
 
-.button-list button {
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid #E7E9FC;
-    background: #F4F4FD;
-}
-
-.button-list button:hover,
-.button-list button:focus {
+.btn:hover,
+.btn:focus {
     cursor: pointer;
-    display: flex;
-    padding: 12px 24px;
-    align-items: flex-start;
-    border-radius: 4px;
-    background: #404BBF;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--white);
+    background: var(--ocean);
 }
 
-.portfolio-list {
-    list-style-type: none;
+.portfolio-card {
+    background: var(--white);
 }
 
-.portfolio-list li {
-    display: flex;
-    width: 360px;
-    height: 420px;
-    padding-bottom: 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    flex-shrink: 0;
-    border: 1px solid #E7E9FC;
-    background: #FFF;
-}
-
-.portfolio-list h3 {
-    color: #2E2F42;
+.card-tittle {
+    color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
 }
 
-.portfolio-list li p {
-    color: #434455;
+.card-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
