@@ -24,7 +24,7 @@ body {
 }
 
 /* Header */
-header a.logo {
+.upper-logo {
     font-family: "Raleway", sans-serif;
     color: var(--iris);
     font-size: 18px;
@@ -34,7 +34,8 @@ header a.logo {
     text-transform: uppercase;
 }
 
-header .logo-part {
+.upper-logo-part {
+    font-family: "Raleway", sans-serif;
     color: var(--navyblue);
 }
 
@@ -78,9 +79,6 @@ header .logo-part {
 /* section 1 */
 
 .hero {
-    width: 1440px;
-    height: 600px;
-    flex-shrink: 0;
     background: var(--navyblue);
 }
 
@@ -113,7 +111,6 @@ header .logo-part {
 
 
 .goal-tittle {
-    width: 264px;
     color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
@@ -122,33 +119,30 @@ header .logo-part {
 }
 
 .goal-text {
-    width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
+/* section 3 */
+
 .project-tittle {
     color: var(--navyblue);
-    text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
 
-/* section 3 */
+/* section 4 */
+
 .team {
-    width: 1440px;
-    height: 732px;
-    flex-shrink: 0;
     background: var(--cloud);
 }
 
 .team-tittle {
     color: var(--navyblue);
-    text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -166,7 +160,7 @@ header .logo-part {
     color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.11;
+    line-height: 1.2;
     letter-spacing: 0.4px;
 }
 
@@ -180,9 +174,6 @@ header .logo-part {
 
 .bottom {
     background-color: var(--navyblue);
-    width: 1440px;
-    height: 312px;
-    flex-shrink: 0;
 }
 
 .bottom-logo {
@@ -198,7 +189,7 @@ header .logo-part {
 
 .bottom-logo-part {
     color: var(--cloud);
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -208,7 +199,6 @@ header .logo-part {
 
 .bottom-text {
     color: var(--cloud);
-    width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -247,6 +237,7 @@ header .logo-part {
 }
 
 .card-text {
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
